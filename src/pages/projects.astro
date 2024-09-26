@@ -1,25 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Content from '../layouts/Content.astro';
+import Project from '../components/Project.astro';
 ---
 
 <Layout title="Marius N. Haugen">
-	<main>
-	<h1 class="align-center text-3xl ">PROJECTS</h1>
-		<ul role="list" class="link-card-grid">
-		</ul>
-	</main>
-</Layout>
+	<Content>
+		<h1 class="mt-20 mb-20 align-center text-3xl ">PROJECTS</h1>
+		<Content>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	
-</style>
+		<Project title="Portfolio" description='A blog style venture into View Transitions using the Astro framework. Intended to serve as an online showcase of my other explorations.'></Project>
+		</Content>
+
+
+	</Content>
+</Layout>

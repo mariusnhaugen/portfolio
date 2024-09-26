@@ -1,26 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Content from '../layouts/Content.astro';
+import Nav from '../components/Navigation.astro';
 ---
 
 <Layout title="Marius N. Haugen">
 	<main>
-	<h1 class="align-center text-3xl ">Marius N. Haugen</h1>
-	<h1 class="align-center text-3xl ">CONTACT</h1>
-		<ul role="list" class="link-card-grid">
-		</ul>
+	<div class="absolute right-5"><Nav></Nav></div>
+	<Content>
+		<div class="flex h-full my-auto justify-center align-middle">
+			<div class="flex flex-col justify-center text-3xl">
+				<h1 class="mb-5 align-center text-4xl ">Marius N. Haugen</h1>
+				<h2>+47 46886232</h2>
+				<h2>mariusnhaugen@gmail.com</h2>
+				<h2>Bergen / London Area</h2>
+			</div>
+		</div>
+	</Content>
+
 	</main>
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	
-</style>

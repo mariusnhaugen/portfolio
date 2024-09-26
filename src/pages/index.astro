@@ -1,18 +1,14 @@
 
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Nav from '../components/Navigation.astro';
 ---
 
 <Layout title="Marius N. Haugen">
 	<main>
 		<div class="flex h-screen justify-center align-middle">
 			<h1 class="text-[15rem] text-white flex flex-col justify-center">M</h1>
-			<ul class="text-white text-4xl flex flex-col justify-center gap-3">
-				<li><a href="/projects">Projects</a></li>
-				<li><a href="/profile">Profile</a></li>
-				<li><a href="/contact">Contact</a></li>
-			</ul>
+			<Nav></Nav>
 		</div>
 	</main>
 </Layout>
