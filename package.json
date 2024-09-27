@@ -13,6 +13,8 @@
     "@astrojs/check": "^0.9.3",
     "@astrojs/tailwind": "^5.1.1",
     "@fontsource/geist-sans": "^5.1.0",
+    "@fontsource/my-soul": "^5.1.0",
+    "@fontsource/rampart-one": "^5.1.0",
     "astro": "^4.15.8",
     "astro-icon": "^1.1.1",
     "tailwindcss": "^3.4.12",

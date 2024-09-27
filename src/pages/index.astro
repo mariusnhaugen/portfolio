@@ -1,14 +1,19 @@
 
 ---
 import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Navigation.astro';
 ---
 
 <Layout title="Marius N. Haugen">
 	<main>
 		<div class="flex h-screen justify-center align-middle">
-			<h1 class="text-[15rem] text-white flex flex-col justify-center">M</h1>
-			<Nav></Nav>
+			<div class="flex flex-col justify-center leading-loose">
+				<a class="peer/1 text-white text-4xl pl-16" href="/profile">Profile</a>
+				<a class="peer/2 text-white text-4xl pl-16 py-2"  href="/projects">Projects</a>
+				<a class="peer/3 text-white text-4xl pl-16" href="/contact">Contact</a>
+				<h1 class="absolute font-light right-[53%] text-[15rem] text-white flex flex-col justify-center peer-hover/1:font-serif peer-hover/2:font-fun peer-hover/3:font-curly peer-hover/3:text-[12rem] peer-hover/3:right-[57%]">M</h1>
+			</div>
+		
+			
 		</div>
 	</main>
 </Layout>

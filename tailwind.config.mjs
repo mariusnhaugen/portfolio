@@ -4,6 +4,9 @@ export default {
   theme: {
     fontFamily: {
       sans: ["Geist Sans", "sans-serif"],
+      serif: ["Times New Roman", "serif"],
+      fun: ["Rampart One", "sans-serif"],
+      curly: ["My Soul", "sans-serif"],
     },
     extend: {
       colors: {
