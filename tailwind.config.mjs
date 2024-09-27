@@ -2,11 +2,14 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    fontFamily: {
+      sans: ["Geist Sans", "sans-serif"],
+    },
     extend: {
       colors: {
-        bg: "#1a1a1a",
+        background: "#1a1a1a",
         dark: "#8A8A8A",
-        "soft-white": "#F0F0F0",
+        "soft-white": "#E6E6E6",
       },
     },
   },
