@@ -1,13 +1,13 @@
 ---
+import Content from '../layouts/Content.astro';
 import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Navigation.astro';
 ---
 
-<Layout title="Marius N. Haugen">
+<Layout title="Profile">
 	<main>
-	<h1 class="align-center text-3xl ">Marius N. Haugen</h1>
-		<ul role="list" class="link-card-grid">
-		</ul>
+		<Content>
+			<h1 class="text-white text-4xl pl-16 w-52 mt-16" transition:name="title-profile">Profile</h1>
+		</Content>
 	</main>
 </Layout>
 
