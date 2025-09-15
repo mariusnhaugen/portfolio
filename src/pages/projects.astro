@@ -2,19 +2,23 @@
 import Layout from '../layouts/Layout.astro';
 import Content from '../layouts/Content.astro';
 import Project from '../components/Project.astro';
+
+import { getCollection } from 'astro:content';
+
+const projects = (await getCollection('projects')).sort(
+  (a, b) => b.data.sortOrder.valueOf() - a.data.sortOrder.valueOf(),
+);
+
 ---
 
 <Layout title="Marius N. Haugen">
 	<Content>
 		<h1 class="w-52 text-white text-4xl mt-16 mb-12 pl-16 " transition:name="title-projects" >Projects</h1>
 		<Content>
-			<div class="inline-grid gap-4 grid-cols-2 grid-rows-">
-				<Project title="Portfolio Website" description='A blog style venture into View Transitions using the Astro framework. Intended to serve as an online showcase of my other explorations.'/>
-				<Project title="Portfolio Website" description='A blog style venture into View Transitions using the Astro framework. Intended to serve as an online showcase of my other explorations.'/>
-				<Project title="Portfolio Website" description='A blog style venture into View Transitions using the Astro framework. Intended to serve as an online showcase of my other explorations.'/>
-				<Project title="Portfolio Website" description='A blog style venture into View Transitions using the Astro framework. Intended to serve as an online showcase of my other explorations.'/>
-				<Project title="Portfolio Website" description='A blog style venture into View Transitions using the Astro framework. Intended to serve as an online showcase of my other explorations.'/>
-				<Project title="Portfolio Website" description='A blog style venture into View Transitions using the Astro framework. Intended to serve as an online showcase of my other explorations.'/>
+            <div class="inline-grid gap-4 grid-cols-2">
+                 {projects.map(project => (
+                 <Project title={project.data.title} description={project.data.description} link=`/projects/${project.data.slug}` />
+                ))}
 			</div>
 		</Content>
 	</Content>

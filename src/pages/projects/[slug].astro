@@ -1,0 +1,19 @@
+---
+import { getCollection, render } from 'astro:content';
+
+    const projects = await getCollection('projects');
+
+export async function getStaticPaths() {
+    const projects = await getCollection('projects');
+    return projects.map((project) => ({
+        params: { slug: project.slug},
+        props: { project },
+      }));
+}
+const { project} = Astro.props;
+const { Content, headings } = await render(project);
+---
+
+<article>
+    <Content/>
+</article>

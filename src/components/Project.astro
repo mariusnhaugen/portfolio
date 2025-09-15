@@ -6,11 +6,13 @@ interface Props {
     description: string
 }
 
-const { title, description } = Astro.props;
+const { title, description, link } = Astro.props;
 ---
 
 <div class="group flex text-2xl flex-col gap-2 border border-dark rounded w-[400px] h-[235px] p-4 hover:border-soft-white ">
+    <a href={link} >
     <h2 class="">{title}</h2>
     <p class="font-extralight leading-7">{description}</p>
-    <div class="flex justify-end"><Icon size="40" class="text-dark group-hover:text-soft-white -mt-4" name="material-symbols:arrow-right"></Icon></div>
+        <div class="flex justify-end"><Icon size="40" class="text-dark group-hover:text-soft-white -mt-4" name="material-symbols:arrow-right"></Icon></div>
+        </a>
 </div>
