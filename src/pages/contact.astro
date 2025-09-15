@@ -2,23 +2,46 @@
 import Layout from '../layouts/Layout.astro';
 import Content from '../layouts/Content.astro';
 import Nav from '../components/Navigation.astro';
+import {Icon} from "astro-icon/components"
+
 ---
 
 <Layout title="Marius N. Haugen">
-	<main>
-	<!-- <div class="absolute right-5"><Nav></Nav></div> -->
+    <main>
+
 	<Content>
 		<h1 class="text-white text-4xl pl-16 w-52 mt-16" transition:name="title-contact">Contact</h1>
-		<div class="flex h-full my-auto justify-center align-middle">
+		<div class="flex h-[60%] my-auto justify-center align-middle">
 			<div class="flex flex-col justify-center text-3xl">
-				<h1 class="mb-5 align-center text-4xl ">Marius N. Haugen</h1>
-				<h2>+47 46886232</h2>
-				<h2>mariusnhaugen@gmail.com</h2>
-				<h2>Bergen / London Area</h2>
+				<h1 class="mb-8 align-center text-4xl ">Marius N. Haugen</h1>
+                    <h2 class="mb-3">mariusnhaugen@gmail.com <button id="copy-btn">
+                        <Icon  name="material-symbols:content-copy-outline" class="clipboard-icon w-10 h-10 -mb-2 text-gray-600" />
+                        <Icon  name="material-symbols:check-small" class="check-icon w-10 h-10 -mb-2 text-gray-600 hidden" />
+                    </button></h2> 
+
+                <h2>London Area Based</h2>
 			</div>
 		</div>
 	</Content>
 
 	</main>
+    <script>
+        const btn = document.getElementById("copy-btn");
+        
+        btn.addEventListener("click", async () => {
+                const clipboardIcon = btn.querySelector(".clipboard-icon");
+                const checkIcon = btn.querySelector(".check-icon");
+
+                await navigator.clipboard.writeText("mariusnhaugen@gmail.com");
+
+                clipboardIcon.classList.add("hidden");
+                checkIcon.classList.remove("hidden");
+
+                setTimeout(() => {
+                clipboardIcon.classList.remove("hidden");
+                checkIcon.classList.add("hidden");
+                }, 2500);
+          });
+        </script>
 </Layout>
 
