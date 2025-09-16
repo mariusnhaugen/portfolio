@@ -3,10 +3,11 @@ import {Icon} from "astro-icon/components"
 
 interface Props {
     title: string,
-    description: string
+    description: string,
+    link: string
 }
 
-const { title, description, link } = Astro.props;
+const { title, description, link} = Astro.props;
 ---
 
 <div class="group flex text-2xl flex-col gap-2 border border-dark rounded w-[400px] h-[235px] p-4 hover:border-soft-white ">
