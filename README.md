@@ -2,7 +2,7 @@
 A quick website built on the Astro framework, intended to show off my other projects.
 Entirely written from scratch. 
 
-Currently hosted [here](mariusnhaugen.netlify.app)
+Currently hosted [here](https://mariusnhaugen.netlify.app/)p
 
 
 ## Why astro? 
