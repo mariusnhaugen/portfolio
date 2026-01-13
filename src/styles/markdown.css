@@ -1,0 +1,60 @@
+:root {
+    --grey-200: #e5e7eb;
+    --grey-300: #d1d5db;
+    --grey-400: #9ca3af;
+}
+
+h1 {
+    color: white;
+    font-size:2rem;
+    font-weight:400;
+    display: inline-block;
+}
+
+h4 {
+    color: white;
+    font-size:1.25rem;
+    font-weight:400;
+    margin-bottom:0.5rem;
+    margin-top:1rem;
+}
+
+p {
+    color: var(--grey-400);
+    font-size:1rem;
+    line-height:1.5rem;
+}
+
+.textbody {
+    max-width:70ch;
+}
+
+.backlink {
+    font-weight:200;
+    font-size:2rem;
+    color: var(--grey-400);
+    margin-left: -150px;
+    width: 144px;
+    height: 48px;
+}
+
+.gh-icon {
+    display: inline-block;
+    margin-left: 20rem;
+    font-size:3rem;
+    color: var(--grey-400);
+}
+
+.title {
+    margin-top:4rem;
+    margin-bottom:4rem;
+}
+
+.description {
+    color: light-grey;
+    font-size:1.5rem;
+    font-weight:300;
+    margin-bottom: 2rem;
+    line-height:2rem;
+    max-width: 800px;
+}
