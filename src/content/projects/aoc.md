@@ -1,17 +1,16 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: Advent of Code 
-description: Learning Rust while helping the elves save christmas. 
-slug: aoc 
-sortOrder: 10
+title: Advent of Code
+description: Learning Rust while helping the elves save Christmas once again.
+slug: aoc
+sortOrder: 30
 githubURL: https://github.com/mariusnhaugen/AOC2025
 ---
+The famous Advent of Code, solved in Rust.
 
+#### Learnings
+Advent of Code forces me to approach problems from a new angle, which I find genuinely enjoyable every year. The way the challenges are structured regularly exposes me more directly to concepts like data structures and algorithms, that I rarely encounter in my usual web development.
 
-The famous Advent of Code.
+I notice that after participating each year, I carry that mindset back into my usual programming work, becoming more performance aware in how I program.
 
-
-#### Learnings 
-I find the way the problems are set up, they allow me to run into concepts I rarely come across doing my (more usual) web development. 
-It allows me to flex new muscles and experience what it feels like to write more performance intensive algorithms in Rust. 
-
+This year specifically, since I chose to solve it in a programming language I'm less familiar with, significantly improved my Rust skills and added another layer of progression.
