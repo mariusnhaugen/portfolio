@@ -8,40 +8,46 @@ import {Icon} from "astro-icon/components"
 <Layout title="Marius N. Haugen">
     <main>
 	<Content>
-        <h1 class="text-4xl pl-16 w-52 mt-16" transition:name="title-contact">Contact</h1>
-            <div class="flex w-full h-[60%] justify-center align-middle -ml-32 mt-32">
-            <div class="flex flex-col justify-center text-3xl">
-                <h1 class="mb-8 align-center text-5xl ">Marius N. Haugen</h1>
-                <h2 class="mb-3 text-gray-400">mariusnhaugen@gmail.com <button id="copy-btn">
-                    <Icon  name="material-symbols:content-copy-outline" class="clipboard-icon w-10 h-10 -mb-2 text-gray-600" />
-                    <Icon  name="material-symbols:check-small" class="check-icon w-10 h-10 -mb-2 text-gray-600 hidden" />
-                </button></h2> 
-
-                <h2 class="text-gray-400">greater london area</h2>
+        <div class="w-full h-full mt-16 md:w-[700px]">
+        <h1 class="inline-block font-extralight text-3xl text-gray-400 lg:ml-[-150px] w-36 h-12 mr-2"><a href="/">Home</a></h1>
+        <h1 class="inline-block text-4xl w-52 " transition:name="title-contact">Contact</h1>
+        <div class="flex w-full h-[60%] justify-center mt-32">
+            <div class="flex flex-col justify-center text-2xl md:text-3xl text-gray-400 -ml-36 ">
+                <h1 class="mb-8 text-white align-center text-4xl md:text-5xl ">Marius N. Haugen</h1>
+                    <h2 class="py-4">London area</h2>
+                <div class="flex gap-2">
+                    <h2 class="mb-3">mariusnhaugen@gmail.com </h2> 
+                    <button id="copy-btn" class="-translate-y-2">
+                        <Icon name="material-symbols:content-copy-outline" class="clipboard-icon w-8 h-8 md:w-10 md:h-10 -mb-2 text-gray-600" />
+                        <Icon name="material-symbols:check-small" class="check-icon w-8 h-8 md:w-10 md:h-10 -mb-2 text-gray-600 hidden" />
+                    </button>
+                </div>
+                <h2>+44 7521 552 067</h2>
             </div>
+        </div>
         </div>
 	</Content>
 
 	</main>
     <script>
         const btn = document.getElementById("copy-btn");
-        if (btn !== null){ 
-        btn.addEventListener("click", async () => {
-                await navigator.clipboard.writeText("mariusnhaugen@gmail.com");
-            
-                const clipboardIcon = btn.querySelector(".clipboard-icon");
-                const checkIcon = btn.querySelector(".check-icon");
+        if (btn !== null) { 
+            btn.addEventListener("click", async () => {
+                    await navigator.clipboard.writeText("mariusnhaugen@gmail.com");
                 
-                if (clipboardIcon !== null && checkIcon !== null) {
-                clipboardIcon.classList.add("hidden");
-                checkIcon.classList.remove("hidden");
+                    const clipboardIcon = btn.querySelector(".clipboard-icon");
+                    const checkIcon = btn.querySelector(".check-icon");
+                    
+                    if (clipboardIcon !== null && checkIcon !== null) {
+                    clipboardIcon.classList.add("hidden");
+                    checkIcon.classList.remove("hidden");
 
-                setTimeout(() => {
-                    clipboardIcon.classList.remove("hidden");
-                    checkIcon.classList.add("hidden");
-                    }, 2500);
-                }
-            });
+                    setTimeout(() => {
+                        clipboardIcon.classList.remove("hidden");
+                        checkIcon.classList.add("hidden");
+                        }, 2500);
+                    }
+                });
         }
         </script>
 </Layout>

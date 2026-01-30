@@ -13,12 +13,15 @@ const projects = (await getCollection('projects')).sort(
 ---
 
 <Layout title="Marius N. Haugen">
-	<Content>
-		<h1 class="w-36 text-white text-4xl mt-16 mb-12 ml-16 h-12 " transition:name="title-projects" >Projects</h1>
-            <div class="grid grid-cols-2 gap-4 items-start w-max mt-48 animation-FadeIn">
+    <Content>
+        <div class="w-full h-full mt-16 md:w-[700px]">
+            <h1 class="inline-block font-extralight text-3xl text-gray-400 ml-[-150px] w-36 h-12"><a href="/">Home</a></h1>
+            <h1 class="inline-block w-36 text-white text-4xl mb-12" transition:name="title-projects" >Projects</h1>
+            <div class="grid grid-cols-1 gap-4 items-start w-max md:grid-cols-2 animation-FadeIn">
                     {projects.map(project => (
                  <Project title={project.data.title} description={project.data.description} link=`/projects/${project.data.slug}` /> 
                 ))}
-			</div>
+            </div>
+        </div>
 	</Content>
 </Layout>

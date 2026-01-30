@@ -15,8 +15,8 @@ const {title, description, githubURL = ""} = frontmatter;
             <h1 class="backlink" transition:name="title-projects"><a href="/projects">Projects</a></h1>
             <h1 class="title"> {title} </h1>
             {githubURL != "" && <RepositoryButton link={githubURL}/>} 
-        <p class="description"> {description} </p>
-        <div class="textbody">
+            <p class="description"> {description} </p>
+            <div class="textbody">
             <slot/>
         </div>
     </article>

@@ -5,12 +5,12 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Marius N. Haugen">
 	<main>
-		<div class="flex h-screen justify-center align-middle">
-			<div class="flex flex-col justify-center leading-loose">
-				<a class="peer/1 text-white text-4xl pl-16 w-52" transition:name="title-profile" href="/profile">Profile</a>
-				<a class="peer/2 text-white text-4xl pl-16 py-2 w-52" transition:name="title-projects" href="/projects" >Projects</a>
-				<a class="peer/3 text-white text-4xl pl-16 w-52" transition:name="title-contact" href="/contact">Contact</a>
-				<h1 class="absolute font-light right-[53%] text-[15rem] text-white flex flex-col justify-center peer-hover/1:font-serif peer-hover/2:font-fun peer-hover/3:font-curly peer-hover/3:text-[12rem] peer-hover/3:right-[57%]">M</h1>
+        <div class="flex h-screen justify-center align-middle overflow-hidden">
+			<div class="relative flex flex-col text-center justify-center leading-loose sm:text-left">
+                <a class="peer/1 text-white text-4xl w-52 sm:translate-x-[55%]" transition:name="title-profile" href="/profile">Profile</a>
+                <a class="peer/2 text-white text-4xl py-8 w-52 sm:translate-x-[55%] sm:py-4" transition:name="title-projects" href="/projects" >Projects</a>
+                <a class="peer/3 text-white text-4xl w-52 sm:translate-x-[55%]" transition:name="title-contact" href="/contact">Contact</a>
+                <h1 class="absolute font-light leading-none -translate-y-[100%] text-[15rem] text-white sm:-translate-x-[55%] sm:translate-y-[0px] sm:peer-hover/1:font-serif sm:peer-hover/2:font-fun sm:peer-hover/3:font-curly sm:peer-hover/3:text-[13rem] sm:peer-hover/3:-translate-x-[85%]">M</h1>
 			</div>
 		</div>
 	</main>
