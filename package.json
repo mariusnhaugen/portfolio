@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/tailwind": "^5.1.1",
+    "@fontsource/fira-mono": "^5.2.7",
     "@fontsource/geist-sans": "^5.1.0",
     "@fontsource/my-soul": "^5.1.0",
     "@fontsource/rampart-one": "^5.1.0",

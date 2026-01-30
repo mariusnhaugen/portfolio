@@ -1,0 +1,19 @@
+---
+import Layout  from './Layout.astro'
+import Content from './Content.astro'
+import '../styles/markdown.css'
+
+const title = Astro.props.frontmatter.title;
+---
+<Layout {title} >
+    <Content>
+        <article class="markdown maxheight">
+            <h1 class="backlink"><a href="/">Home</a></h1>
+            <h1 class="title" transition:name="title-profile"> {title} </h1>
+            <div class="textbody">
+                <slot/>
+            </div>
+        </article>
+    </Content>
+</Layout>
+

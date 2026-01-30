@@ -1,13 +1,19 @@
 :root {
+    --links: #a0f000;
+    
+    /* Tailwind values to keep consistency */
     --grey-200: #e5e7eb;
     --grey-300: #d1d5db;
     --grey-400: #9ca3af;
+
+    --3xl: 1.875rem;
+    --4xl: 2.25rem;
 }
 
 h1 {
+    font-weight:200;
     color: white;
-    font-size:2rem;
-    font-weight:400;
+    font-size:var(--4xl);
     display: inline-block;
 }
 
@@ -19,19 +25,42 @@ h4 {
     margin-top:1rem;
 }
 
+h6 { 
+   margin-top: 1rem;
+   margin-bottom: 0.1rem;
+}
+
+
 p {
     color: var(--grey-400);
     font-size:1rem;
     line-height:1.5rem;
 }
 
+ul {
+    margin-left:1.5rem;
+
+}
+
+li {
+    list-style:inside;
+    color:var(--grey-400);
+    line-height: 1.5;
+}
+
+
 .textbody {
     max-width:70ch;
+    line-height: 2;
+}
+
+.textbody a {
+    color: var(--links);
 }
 
 .backlink {
     font-weight:200;
-    font-size:2rem;
+    font-size:var(--3xl);
     color: var(--grey-400);
     margin-left: -150px;
     width: 144px;
@@ -58,3 +87,6 @@ p {
     line-height:2rem;
     max-width: 800px;
 }
+
+.maxheight { height: 100vh; }
+
