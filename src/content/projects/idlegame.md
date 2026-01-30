@@ -7,8 +7,9 @@ sortOrder: 50
 githubURL: https://github.com/mariusnhaugen/dinodwarf
 ---
 Experiment into game development with the [Bevy Engine](https://bevy.org/)
-
-*currently a paused project, but this was easily the project with the most new challenges and learnings I sunk my teeth into in 2025*
+<br>
+<br>
+*Currently a paused project, but this was easily the project with the most new challenges and learnings I sunk my teeth into in 2025*
 #### Learnings
 - Rust
 - Working with an ECS 
@@ -24,5 +25,6 @@ I specifically wanted to learn Rust because of its position as a low level langu
 
 #### Why a game? 
 I had never made one. Designing a game has wildly different constraints from the web applications I'm already used to, and I was initially sketching out UI elements and game progression ideas like a child enchanted with the possibilities of a crayon.
-
+<br>
+<br>
 The Bevy engine specifically forces you to buy into the idea of building software using the ECS pattern, which provided another brain teaser to wrap my head around. 
