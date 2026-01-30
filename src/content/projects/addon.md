@@ -10,7 +10,7 @@ githubURL: https://github.com/mariusnhaugen/BuffBot
 #### Learnings 
 - Lua
 - Reverse engineering APIs with very varied documentation quality.
-- Talking to clients and change designs based on end user feedback directly.
+- Talking to users and change designs based on end user feedback directly.
 - Maintaining a piece of software through multiple game patches
 
 #### What?
@@ -23,7 +23,7 @@ There are plugins that allow you to run scripts to customise your User Interface
 Also the joy of making something I would have use for myself.
 
 #### Reverse engineering the game API
-Implementing functionality in an embedded Lua engine was always going to require learning the API. The environment is locked down since it tries to protect the end user from malicious or poorly written plugins, with no guarantee for API stability. As a result, despite the community maintaining very impressive Wikis, most of the online documentation is ephemeral and I found the most effective strategy was to experiment. 
+Implementing functionality in an embedded Lua engine was always going to require learning the API. It is a heavily sandboxed environment as it tries to protect the end user from malicious or poorly written plugins, with no guarantee for API stability. As a result, despite the community maintaining very impressive Wikis, most of the online documentation is ephemeral and I found the most effective strategy was to experiment. 
 <br>
 <br>
 The API also differs greatly depending on the year each feature was implemented, which made digging around feel like digital archaeology. 

@@ -9,7 +9,8 @@ githubURL: https://github.com/mariusnhaugen/dinodwarf
 Experiment into game development with the [Bevy Engine](https://bevy.org/)
 <br>
 <br>
-*Currently a paused project, but this was easily the project with the most new challenges and learnings I sunk my teeth into in 2025*
+*Currently a paused project, but this was easily the project I learned the most new things from in 2025*
+
 #### Learnings
 - Rust
 - Working with an ECS 
