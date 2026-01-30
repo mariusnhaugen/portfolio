@@ -1,8 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
 
-    const projects = await getCollection('projects');
-
 export async function getStaticPaths() {
     const projects = await getCollection('projects');
     return projects.map((project) => ({
@@ -11,7 +9,7 @@ export async function getStaticPaths() {
       }));
 }
 const { project} = Astro.props;
-const { Content, headings } = await render(project);
+const { Content } = await render(project);
 ---
 
 <article>
