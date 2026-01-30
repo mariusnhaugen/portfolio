@@ -8,7 +8,7 @@ Currently hosted [here](https://mariusnhaugen.netlify.app/)
 ## Why astro? 
 I wanted to play around with the view transitions API and needed a portfolio. Astro was one of the first frameworks to support View Transitions while also being exceptionally suited for statically generated blog content.
 
-Note: MPA View Transitions is only partially supported in Firefox at the time of writing so if you want to see the super fluid headings moving around you might need to give in to the chromium gods for 3 minutes :( sorry.
+Note: MPA View Transitions is only partially supported in Firefox at the time of writing so if you want to see the super fluid headings sliding around you might need to give in to the chromium gods for this one.
 
 
 
