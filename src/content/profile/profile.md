@@ -10,7 +10,14 @@ Based near London, I am now looking to bring my Scandinavian startup experience 
 \
 \
 I have full right to work without need for sponsorship.
+<br>
+<br>
 
+#### Background
+I first encountered programming at 11 years old, experimenting with simple tools in Visual Basic on the shared family computer. I moved to to building early websites by hand in Notepad, and I’ve seen code as a primary way of understanding systems and solving problems ever since.
+<br>
+<br>
+<br>
 
 #### Work Experience
 ###### SyncDNA - Fullstack Software Engineer
@@ -21,9 +28,3 @@ Fullstack engineer on a pre-revenue MVP for a real-time collaboration platform i
 ###### Spotten - Full stack developer 
 TypeScript, React, Next.js, Tailwind, Node.js (Express, Sequelize), MySQL, Docker, Mapbox GIS  
 Fullstack developer at an early-stage marketplace startup, working across product, engineering, and operations.  
-
-#### Background
-The first time I encountered programming was as a preteen, watching gaming videos online. I immediately started experimenting in the Visual Basic editor on the family computer, building simple calculators and small tools. It immediately felt like I’d discovered something that was supposed to be a secret. 
-
-That curiosity continued into making my first websites in Notepad. And typing out html tags by hand whenever I wanted to show off to friends. Since then, I’ve seen code as a primary vector for problem solving: understanding building blocks in systems, and putting the blocks back together.
-

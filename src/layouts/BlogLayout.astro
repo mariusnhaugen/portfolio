@@ -11,9 +11,11 @@ const {title, description, githubURL = ""} = frontmatter;
 <Layout {title} >
     <Content>
         <article class="markdown">
-            <h1 class="backlink" transition:name="title-projects"><a href="/projects">Projects</a></h1>
-            <h1 class="title"> {title} </h1>
-            {githubURL != "" && <RepositoryButton link={githubURL}/>} 
+            <div class="flex flex-col sm:flex-row my-4 md:my-6">
+                <h1 class="backlink  hidden md:inline-block " transition:name="title-projects"><a href="/projects">Projects</a></h1>
+                <h1 class=""> {title} </h1>
+                {githubURL != "" && <RepositoryButton link={githubURL}/>} 
+            </div>
             <p class="description"> {description} </p>
             <div class="textbody">
             <slot/>
