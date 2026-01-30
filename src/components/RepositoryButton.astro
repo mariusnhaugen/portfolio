@@ -5,7 +5,7 @@ interface Props {
     link: string
 }
 
-const link = Astro.props;
+const { link }  = Astro.props;
 ---
 <a href={link} class="inline-block ml-60">
     <div class="group border flex gap-2  border-dark rounded w-[175px] h-[50px] hover:border-soft-white ">
