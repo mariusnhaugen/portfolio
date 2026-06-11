@@ -63,9 +63,12 @@ li {
     font-weight:200;
     font-size:var(--3xl);
     color: var(--grey-400);
-    margin-left: -150px;
     width: 144px;
     height: 48px;
+}
+
+@media (min-width: 1024px) {
+    .backlink { margin-left: -150px; }
 }
 
 .gh-icon {
@@ -73,20 +76,6 @@ li {
     margin-left: 20rem;
     font-size:3rem;
     color: var(--grey-400);
-}
-
-.title {
-    margin-top:4rem;
-    margin-bottom:2rem;
-}
-
-.description {
-    color: light-grey;
-    font-size:1.5rem;
-    font-weight:300;
-    margin-bottom: 2rem;
-    line-height:2rem;
-    max-width: 800px;
 }
 
 .maxheight { height: 100vh; }

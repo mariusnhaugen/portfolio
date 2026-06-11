@@ -1,6 +1,7 @@
 ---
 import Layout  from './Layout.astro'
 import Content from './Content.astro'
+import BackLink from '../components/BackLink.astro'
 import '../styles/markdown.css'
 
 const title = Astro.props.frontmatter.title;
@@ -8,8 +9,10 @@ const title = Astro.props.frontmatter.title;
 <Layout {title} >
     <Content>
         <article class="markdown maxheight">
-            <h1 class="backlink"><a href="/">Home</a></h1>
-            <h1 class="title" transition:name="title-profile"> {title} </h1>
+            <div class="mt-6 md:mt-10 lg:mt-16 mb-6 lg:mb-8">
+                <BackLink class="lg:ml-[-150px] h-12 mr-2" />
+                <h1 class="inline-block" transition:name="title-profile"> {title} </h1>
+            </div>
             <div class="textbody">
                 <slot/>
             </div>
