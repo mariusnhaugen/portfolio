@@ -5,20 +5,17 @@ description: A cute little incremental idle game written in Rust and the Bevy En
 slug: idlegame 
 sortOrder: 50
 githubURL: https://github.com/mariusnhaugen/dinodwarf
+learnings:
+  - Rust
+  - Working with an ECS
+  - Designing game systems
+  - Managing game assets in code and creating them
+  - "Learning game-dev \"lingo\" to be able to find concepts in documentation"
 ---
 Experiment into game development with the [Bevy Engine](https://bevy.org/)
 <br>
 <br>
 *Currently a paused project, but this was easily the project I learned the most new things from in 2025*
-
-#### Learnings
-- Rust
-- Working with an ECS 
-- Game dev concepts
-	- Designing game systems
-	- Managing assets (Both in code and creating them)
-	- Even just learning the "lingo" to be able to find concepts in documentation
-		- Translating "mouse event" to "sprite picking" took longer than I want to admit
 
 #### Why rust? 
 

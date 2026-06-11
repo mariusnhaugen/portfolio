@@ -1,0 +1,16 @@
+---
+interface Props {
+    learnings: string[];
+}
+const { learnings } = Astro.props;
+---
+<section class="my-8 border-l border-dark/40 pl-5">
+    <h2 class="mb-3 text-sm font-light uppercase tracking-[0.2em] text-dark">Learnings</h2>
+    <ul class="ml-0 flex flex-col gap-1.5">
+        {learnings.map((item) => (
+            <li class="list-none font-extralight text-lg leading-7 text-gray-400 before:mr-2 before:text-dark before:content-['–']">
+                {item}
+            </li>
+        ))}
+    </ul>
+</section>

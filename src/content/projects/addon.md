@@ -5,13 +5,12 @@ description: My experience writing a fully released MMORPG plugin.
 slug: addon 
 sortOrder: 99
 githubURL: https://github.com/mariusnhaugen/BuffBot
+learnings:
+  - Lua
+  - Reverse engineering APIs with very varied documentation quality.
+  - Talking to users and change designs based on end user feedback directly.
+  - Maintaining a piece of software through multiple game patches
 ---
-
-#### Learnings 
-- Lua
-- Reverse engineering APIs with very varied documentation quality.
-- Talking to users and change designs based on end user feedback directly.
-- Maintaining a piece of software through multiple game patches
 
 #### What?
 A Quality of Life plugin ("addon") for the MMORPG World of Warcraft. Written in Lua for the games own embedded engine, reviewed by a third party and released on the the most popular [plugin repository](https://www.curseforge.com/wow/addons/buffbot).

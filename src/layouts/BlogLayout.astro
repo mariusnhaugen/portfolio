@@ -2,13 +2,14 @@
 import Layout  from './Layout.astro'
 import Content from './Content.astro'
 import RepositoryButton from '../components/RepositoryButton.astro'
+import Learnings from '../components/Learnings.astro'
 import '../styles/markdown.css'
 
 
 const {frontmatter} = Astro.props;
-const {title, description, githubURL = ""} = frontmatter;
+const {title, description, githubURL = "", learnings = []} = frontmatter;
 ---
-<Layout {title} >
+<Layout {title} {description}>
     <Content>
         <article class="markdown">
             <div class="flex flex-col sm:flex-row my-4 md:my-6">
@@ -16,7 +17,7 @@ const {title, description, githubURL = ""} = frontmatter;
                 <h1 class=""> {title} </h1>
                 {githubURL != "" && <RepositoryButton link={githubURL}/>} 
             </div>
-            <p class="description"> {description} </p>
+            {learnings.length > 0 && <Learnings {learnings} />}
             <div class="textbody">
             <slot/>
         </div>
