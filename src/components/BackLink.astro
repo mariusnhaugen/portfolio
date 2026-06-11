@@ -1,0 +1,11 @@
+---
+interface Props {
+	class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<nav class:list={['inline-block font-extralight text-3xl text-gray-400', className]}>
+	<a href="/">Home</a>
+</nav>

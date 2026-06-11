@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Content from '../layouts/Content.astro';
 import Project from '../components/Project.astro';
+import BackLink from '../components/BackLink.astro';
 import '../styles/animation.css'
 
 import { getCollection } from 'astro:content';
@@ -12,10 +13,10 @@ const projects = (await getCollection('projects')).sort(
 
 ---
 
-<Layout title="Marius N. Haugen">
+<Layout title="Marius N. Haugen" description="Projects by Marius N. Haugen — developer based in the London area.">
     <Content>
         <div class="w-full h-full mt-16 md:w-[700px]">
-            <h1 class="inline-block font-extralight text-3xl text-gray-400 ml-[-150px] w-36 h-12"><a href="/">Home</a></h1>
+            <BackLink class="ml-[-150px] w-36 h-12" />
             <h1 class="inline-block w-36 text-white text-4xl mb-12" transition:name="title-projects" >Projects</h1>
             <div class="grid grid-cols-1 gap-4 items-start w-max md:grid-cols-2 animation-FadeIn">
                     {projects.map(project => (
