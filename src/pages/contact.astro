@@ -1,28 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Content from '../layouts/Content.astro';
+import BackLink from '../components/BackLink.astro';
 import {Icon} from "astro-icon/components"
 
 ---
 
-<Layout title="Marius N. Haugen">
+<Layout title="Marius N. Haugen" description="Contact Marius N. Haugen — developer based in the London area.">
     <main>
 	<Content>
-        <div class="w-full h-full mt-16 md:w-[700px]">
-        <h1 class="inline-block font-extralight text-3xl text-gray-400 lg:ml-[-150px] w-36 h-12 mr-2"><a href="/">Home</a></h1>
+        <div class="flex flex-col w-full h-full md:w-[700px]">
+        <div class="mt-16">
+        <BackLink class="lg:ml-[-150px] h-12 mr-2" />
         <h1 class="inline-block text-4xl w-52 " transition:name="title-contact">Contact</h1>
-        <div class="flex w-full h-[60%] justify-center mt-32">
-            <div class="flex flex-col justify-center text-2xl md:text-3xl text-gray-400 -ml-36 ">
-                <h1 class="mb-8 text-white align-center text-4xl md:text-5xl ">Marius N. Haugen</h1>
-                    <h2 class="py-4">London area</h2>
-                <div class="flex gap-2">
-                    <h2 class="mb-3">mariusnhaugen@gmail.com </h2> 
-                    <button id="copy-btn" class="-translate-y-2">
-                        <Icon name="material-symbols:content-copy-outline" class="clipboard-icon w-8 h-8 md:w-10 md:h-10 -mb-2 text-gray-600" />
-                        <Icon name="material-symbols:check-small" class="check-icon w-8 h-8 md:w-10 md:h-10 -mb-2 text-gray-600 hidden" />
+        </div>
+        <div class="flex-1 flex justify-center items-center">
+            <div class="flex flex-col text-lg min-[400px]:text-xl md:text-3xl text-gray-400">
+                <h2 class="mb-8 text-white align-center text-3xl min-[400px]:text-4xl md:text-5xl ">Marius N. Haugen</h2>
+                    <p class="py-4">London area</p>
+                <div class="flex items-center gap-2">
+                    <p>mariusnhaugen@gmail.com</p>
+                    <button id="copy-btn" aria-label="Copy email address">
+                        <Icon name="material-symbols:content-copy-outline" class="clipboard-icon w-6 h-6 min-[400px]:w-7 min-[400px]:h-7 md:w-10 md:h-10 text-gray-600" />
+                        <Icon name="material-symbols:check-small" class="check-icon w-6 h-6 min-[400px]:w-7 min-[400px]:h-7 md:w-10 md:h-10 text-gray-600 hidden" />
                     </button>
                 </div>
-                <h2>+44 7521 552 067</h2>
+                <p class="pt-4">+44 7521 552 067</p>
             </div>
         </div>
         </div>
