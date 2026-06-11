@@ -11,11 +11,11 @@ const { title, description, link} = Astro.props;
 ---
 
 <a href={link} >
-    <div class="group flex flex-col justify-between border border-dark rounded w-[70%] sm:w-80 h-40 sm:h-52 p-4 hover:border-soft-white ">
-        <h2 class="text-2xl ">{title}</h2>
-        <p class="font-extralight text-xl leading-7">{description}</p>
+    <div class="group flex flex-col justify-between gap-2 border border-dark rounded w-full max-w-sm md:max-w-none min-h-40 sm:min-h-52 p-4 transition-colors duration-200 hover:border-soft-white">
+        <h2 class="text-2xl text-soft-white">{title}</h2>
+        <p class="font-extralight text-xl leading-7 line-clamp-3">{description}</p>
         <div class="flex justify-end ">
-            <Icon size="40" class="text-dark group-hover:text-soft-white -mt-4" name="material-symbols:arrow-right"></Icon>
+            <Icon size="40" class="text-dark group-hover:text-soft-white -mt-4 transition-colors duration-200" name="material-symbols:arrow-right"></Icon>
         </div>
     </div>
 </a>
