@@ -7,7 +7,7 @@ import '../styles/markdown.css'
 
 
 const {frontmatter} = Astro.props;
-const {title, description, githubURL = "", learnings = []} = frontmatter;
+const {title, description, repos = [], learnings = []} = frontmatter;
 ---
 <Layout {title} {description}>
     <Content>
@@ -15,7 +15,11 @@ const {title, description, githubURL = "", learnings = []} = frontmatter;
             <div class="flex flex-col sm:flex-row my-4 md:my-6">
                 <h1 class="backlink  hidden md:inline-block " transition:name="title-projects"><a href="/projects">Projects</a></h1>
                 <h1 class=""> {title} </h1>
-                {githubURL != "" && <RepositoryButton link={githubURL}/>} 
+                {repos.length > 0 &&
+                    <div class="flex flex-wrap gap-2 sm:ml-auto p-8 sm:p-0">
+                        {repos.map((repo: {label?: string, url: string}) => <RepositoryButton link={repo.url} label={repo.label}/>)}
+                    </div>
+                }
             </div>
             {learnings.length > 0 && <Learnings {learnings} />}
             <div class="textbody">

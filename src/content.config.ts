@@ -10,7 +10,10 @@ const projects = defineCollection({
         slug: z.string(),
         sortOrder: z.number().optional(),
         learnings: z.array(z.string()).optional(),
-        githubURL: z.string().url().optional(),
+        repos: z.array(z.object({
+            label: z.string().optional(),
+            url: z.string().url(),
+        })).optional(),
     }) 
 })
 

@@ -4,7 +4,8 @@ title: Web Scraper
 description: Exploring web scraping and html parsing in Rust.
 slug: webscraper 
 sortOrder: 98
-githubURL: https://github.com/mariusnhaugen/webspider
+repos:
+  - url: https://github.com/mariusnhaugen/webspider
 learnings:
   - Web security concepts (robots.txt, user agents, token-based authentication)
   - HTML parsing using libraries

@@ -4,7 +4,8 @@ title: Game Plugin
 description: My experience writing a fully released MMORPG plugin. 
 slug: addon 
 sortOrder: 99
-githubURL: https://github.com/mariusnhaugen/BuffBot
+repos:
+  - url: https://github.com/mariusnhaugen/BuffBot
 learnings:
   - Lua
   - Reverse engineering APIs with very varied documentation quality.

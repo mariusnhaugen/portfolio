@@ -4,7 +4,8 @@ title: This Portfolio Website
 description: A blog style venture into View Transitions using the Astro framework. Intended to serve as an online showcase of my other experiments.
 slug: portfolio
 sortOrder: 100
-githubURL: https://github.com/mariusnhaugen/portfolio
+repos:
+  - url: https://github.com/mariusnhaugen/portfolio
 learnings:
   - View Transitions (and debugging aspect ratios on html elements...)
   - Building a modern website without react

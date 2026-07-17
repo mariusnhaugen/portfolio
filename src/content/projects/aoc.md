@@ -4,7 +4,8 @@ title: Advent of Code
 description: Learning Rust while helping the elves save Christmas once again.
 slug: aoc
 sortOrder: 30
-githubURL: https://github.com/mariusnhaugen/AOC2025
+repos:
+  - url: https://github.com/mariusnhaugen/AOC2025
 learnings:
   - Exposure to data structures and algorithms rarely encountered in day-to-day web development
   - A more performance-aware mindset carried back into my usual programming work
