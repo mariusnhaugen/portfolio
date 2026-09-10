@@ -12,7 +12,7 @@ const {title, description, repos = [], learnings = []} = frontmatter;
 <Layout {title} {description}>
     <Content>
         <article class="markdown">
-            <div class="flex flex-col sm:flex-row my-4 md:my-6">
+            <div class="flex flex-col sm:flex-row mt-3 md:mt-4 mb-4 md:mb-6">
                 <h1 class="backlink  hidden md:inline-block " transition:name="title-projects"><a href="/projects">Projects</a></h1>
                 <h1 class=""> {title} </h1>
                 {repos.length > 0 &&

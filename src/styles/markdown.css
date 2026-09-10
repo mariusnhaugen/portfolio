@@ -53,6 +53,7 @@ li {
 .textbody {
     max-width:70ch;
     line-height: 2;
+    padding-bottom: 6rem;
 }
 
 .textbody a {
