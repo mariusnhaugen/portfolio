@@ -6,6 +6,7 @@
     --grey-300: #d1d5db;
     --grey-400: #9ca3af;
 
+    --2xl: 1.5rem;
     --3xl: 1.875rem;
     --4xl: 2.25rem;
 }
@@ -17,10 +18,24 @@ h1 {
     display: inline-block;
 }
 
+h2 {
+    color: white;
+    font-size:var(--3xl);
+    margin-bottom:0.75rem;
+    margin-top:2.5rem;
+}
+
+h3 {
+    color: white;
+    font-size:var(--2xl);
+    margin-bottom:0.6rem;
+    margin-top:2rem;
+}
+
 h4 {
     color: white;
     font-size:1.3rem;
-    font-weight:400;
+    font-weight:300;
     margin-bottom:0.5rem;
     margin-top:1rem;
 }
@@ -50,9 +65,21 @@ li {
 }
 
 
+.caption {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+/* Flex items default to min-width:auto, which lets a wide diagram's
+   min-width stretch the article past the viewport. */
+.markdown {
+    min-width: 0;
+}
+
 .textbody {
     max-width:70ch;
     line-height: 2;
+    padding-bottom: 6rem;
 }
 
 .textbody a {
